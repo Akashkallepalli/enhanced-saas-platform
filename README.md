@@ -5,6 +5,183 @@ Markdown# Enhanced SaaS Platform
 ![Node.js](https://img.shields.io/badge/Node.js-20.x-339933.svg)
 
 A scalable, **multi-tenant SaaS (Software as a Service) backend API** designed for high performance and security. This platform supports organization isolation, project management, and comprehensive audit logging.
+````markdown
+# Enhanced SaaS Platform
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Node.js](https://img.shields.io/badge/Node.js-20.x-339933.svg)
+
+A scalable, **multi-tenant SaaS (Software as a Service) backend API** designed for high performance and security. This platform supports organization isolation, project management, and comprehensive audit logging.
+
+**Repository:**  
+https://github.com/Akashkallepalli/enhanced-saas-platform
+
+---
+
+## 🚀 Key Features
+
+- 🏢 **Multi-Tenancy Architecture**  
+  Built-in support for multiple tenants (organizations) with strict data isolation.
+
+- 🔐 **Secure Authentication**  
+  JWT-based authentication with secure password hashing.
+
+- 👥 **User & Role Management**  
+  Granular user and role control via centralized controllers.
+
+- 📂 **Project & Task Management**  
+  - Create and manage projects  
+  - Assign and track tasks within projects
+
+- 📜 **Audit Logging**  
+  Tracks critical system actions for compliance and security.
+
+- 🗄️ **Database Migrations**  
+  Custom migration scripts to manage schema evolution.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Runtime:** Node.js
+- **Framework:** Express.js
+- **Database:** PostgreSQL
+- **Architecture:** MVC (Models, Routes, Controllers)
+
+---
+
+## 📂 Project Structure
+
+```bash
+enhanced-saas-platform/
+├── migrations/
+│   ├── 001_create_tenants.sql
+│   └── ...
+├── src/
+│   ├── config/
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── tenantController.js
+│   │   ├── projectController.js
+│   │   └── taskController.js
+│   ├── middleware/
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Tenant.js
+│   │   └── AuditLog.js
+│   ├── routes/
+│   ├── scripts/
+│   │   └── migrate.js
+│   └── app.js
+├── Dockerfile
+├── package.json
+└── README.md
+````
+
+---
+
+## ⚡ Getting Started
+
+### Prerequisites
+
+* Node.js (v18 or higher)
+* PostgreSQL
+* Git
+
+---
+
+### Installation
+
+#### Clone the Repository
+
+```bash
+git clone https://github.com/Akashkallepalli/enhanced-saas-platform.git
+cd enhanced-saas-platform
+```
+
+#### Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### Environment Setup
+
+Create a `.env` file in the root directory:
+
+```env
+PORT=3000
+DB_HOST=localhost
+DB_USER=postgres
+DB_PASS=yourpassword
+DB_NAME=saas_db
+JWT_SECRET=your_secure_secret
+```
+
+---
+
+### Run Database Migrations
+
+```bash
+npm run migrate
+# OR
+node src/scripts/migrate.js
+```
+
+---
+
+### Start the Server
+
+```bash
+npm start
+```
+
+---
+
+## 📡 API Endpoints Overview
+
+| Module  | Method | Endpoint           | Description                        |
+| ------- | ------ | ------------------ | ---------------------------------- |
+| Auth    | POST   | /api/auth/register | Register a new user                |
+| Auth    | POST   | /api/auth/login    | Login and receive JWT              |
+| Tenant  | POST   | /api/tenants       | Create a new organization (tenant) |
+| Project | GET    | /api/projects      | List projects for current tenant   |
+| Task    | POST   | /api/tasks         | Create a task in a project         |
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch
+
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit your changes
+
+   ```bash
+   git commit -m "Add AmazingFeature"
+   ```
+4. Push to the branch
+
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+Distributed under the **MIT License**.
+See `LICENSE` for more information.
+
+```
+```
 
 **Repository:** [https://github.com/Akashkallepalli/enhanced-saas-platform](https://github.com/Akashkallepalli/enhanced-saas-platform)
 
