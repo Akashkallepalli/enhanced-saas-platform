@@ -33,10 +33,6 @@
           {
             "name": "Project Alpha",
             "description": "First demo project"
-          },
-          {
-            "name": "Project Beta",
-            "description": "Second demo project"
           }
         ]
       }
