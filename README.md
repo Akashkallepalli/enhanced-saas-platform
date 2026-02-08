@@ -330,13 +330,13 @@ The frontend is being actively integrated and will include:
 [view database-erd](docs/images/database-erd.png)
 [view system-architecture](docs/images/system-architecture.png)
 
-<!-- ---
+---
 
 ## Youtube vide link
 
 [click here](https://youtu.be/E_WFrt1hIAE)
 
---- -->
+---
 
 ## Conclusion
 
